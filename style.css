@@ -1,0 +1,31 @@
+:root {
+    --bg-deep: #070b18;
+    --panel: rgba(21, 26, 45, 0.72);
+    --panel-line: rgba(255, 255, 255, 0.09);
+    --display-bg: rgba(6, 9, 20, 0.85);
+    --key: #252c44;
+    --key-hover: #313a58;
+    --key-muted: #38415f;
+    --key-muted-hover: #434d6f;
+    --text: #f4f7ff;
+    --text-dim: #a7b0cc;
+    --accent: #ff9f0a;
+    --accent-hover: #ffb340;
+    --accent-text: #1c1305;
+    --equals-from: #35d399;
+    --equals-to: #0b9e6c;
+    --equals-hover-from: #4ae3ad;
+    --equals-hover-to: #12b47c;
+    --radius-lg: 28px;
+    --radius-md: 16px;
+    --radius-display: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
