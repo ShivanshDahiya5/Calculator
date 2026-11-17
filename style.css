@@ -70,6 +70,7 @@ body {
         opacity: 0;
         transform: translateY(18px) scale(0.97);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -158,7 +159,7 @@ button:active {
     font-weight: 600;
 }
 
-.numbers > button:nth-child(-n + 3) {
+.numbers>button:nth-child(-n + 3) {
     background: var(--key-muted);
     color: var(--text);
     font-size: 1.2rem;
@@ -197,7 +198,7 @@ button:active {
         background: var(--accent-hover);
     }
 
-    .numbers > button:nth-child(-n + 3):hover {
+    .numbers>button:nth-child(-n + 3):hover {
         background: var(--key-muted-hover);
     }
 
@@ -226,5 +227,19 @@ button:active {
 
     .zero {
         padding-left: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .container {
+        animation: none;
+    }
+
+    button {
+        transition: background 0.15s ease;
+    }
+
+    button:active {
+        transform: none;
     }
 }
