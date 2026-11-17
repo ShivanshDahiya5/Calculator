@@ -176,3 +176,19 @@ button:active {
         0 8px 18px rgba(11, 158, 108, 0.35),
         0 1px 0 rgba(255, 255, 255, 0.25) inset;
 }
+
+/* Zero key spans two columns */
+.zero {
+    grid-column: span 2;
+    text-align: left;
+    padding-left: 26px;
+    font-size: 1.35rem;
+}
+
+@media (hover: hover) {
+    button:hover {
+        background: var(--key-hover);
+        box-shadow:
+            0 9px 20px rgba(0, 0, 0, 0.42),
+            0 1px 0 rgba(255, 255, 255, 0.09) inset;
+    }
