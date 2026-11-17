@@ -192,3 +192,19 @@ button:active {
             0 9px 20px rgba(0, 0, 0, 0.42),
             0 1px 0 rgba(255, 255, 255, 0.09) inset;
     }
+
+    .operator:hover {
+        background: var(--accent-hover);
+    }
+
+    .numbers > button:nth-child(-n + 3):hover {
+        background: var(--key-muted-hover);
+    }
+
+    .equals:hover {
+        background: linear-gradient(160deg, var(--equals-hover-from), var(--equals-hover-to));
+        box-shadow:
+            0 10px 24px rgba(11, 158, 108, 0.45),
+            0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    }
+}
