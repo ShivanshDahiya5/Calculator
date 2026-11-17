@@ -208,3 +208,23 @@ button:active {
             0 1px 0 rgba(255, 255, 255, 0.3) inset;
     }
 }
+
+/* Small screens */
+@media (max-width: 360px) {
+    body {
+        padding: 14px;
+    }
+
+    .container {
+        padding: 16px;
+        border-radius: 22px;
+    }
+
+    .numbers {
+        gap: 8px;
+    }
+
+    .zero {
+        padding-left: 20px;
+    }
+}
