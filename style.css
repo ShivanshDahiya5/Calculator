@@ -149,3 +149,17 @@ button:active {
     transform: translateY(1px) scale(0.965);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
+
+/* Operators */
+.operator {
+    background: var(--accent);
+    color: var(--accent-text);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.numbers > button:nth-child(-n + 3) {
+    background: var(--key-muted);
+    color: var(--text);
+    font-size: 1.2rem;
+}
