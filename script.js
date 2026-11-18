@@ -32,3 +32,15 @@ function setOperator(op) {
 
     updateDisplay(); // show "12 +"
 }
+
+function clearDisplay() {
+    currentValue = "";
+    previousValue = "";
+    operator = "";
+    display.value = "0";
+}
+
+function deleteLast() {
+    currentValue = currentValue.slice(0, -1);
+    updateDisplay();
+}
