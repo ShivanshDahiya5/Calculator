@@ -52,3 +52,22 @@ function calculate() {
     let num2 = parseFloat(currentValue);
     let result;
 
+    switch (operator) {
+        case "+":
+            result = num1 + num2;
+            break;
+        case "−":
+            result = num1 - num2;
+            break;
+        case "×":
+            result = num1 * num2;
+            break;
+        case "÷":
+            result = num2 === 0 ? "Error" : num1 / num2;
+            break;
+        case "%":
+            result = num1 % num2;
+            break;
+        default:
+            return;
+    }
