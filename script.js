@@ -18,3 +18,17 @@ function appendValue(value) {
     currentValue += value;
     updateDisplay();
 }
+
+function setOperator(op) {
+    if (currentValue === "") return;
+
+    if (previousValue !== "") {
+        calculate();
+    }
+
+    operator = op;
+    previousValue = currentValue;
+    currentValue = "";
+
+    updateDisplay(); // show "12 +"
+}
