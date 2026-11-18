@@ -44,3 +44,11 @@ function deleteLast() {
     currentValue = currentValue.slice(0, -1);
     updateDisplay();
 }
+
+function calculate() {
+    if (currentValue === "" || previousValue === "") return;
+
+    let num1 = parseFloat(previousValue);
+    let num2 = parseFloat(currentValue);
+    let result;
+
