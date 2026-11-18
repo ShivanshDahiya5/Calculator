@@ -71,3 +71,10 @@ function calculate() {
         default:
             return;
     }
+
+    display.value = result;
+
+    currentValue = result.toString();
+    previousValue = "";
+    operator = "";
+}
